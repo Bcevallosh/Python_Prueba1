@@ -4,7 +4,7 @@ import os
 carpeta_imagenes = 'graficos'
 if not os.path.exists(carpeta_imagenes):
     os.makedirs(carpeta_imagenes)
-csv=pd.read_csv('EjemplosU.csv.csv')
+csv=pd.read_csv('Ejemplos.csv')
 
 dataframe=pd.DataFrame(csv)
 pais=dataframe["PAIS"].value_counts("PRESUPUESTO DEVENGADO").head(10)
